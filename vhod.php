@@ -54,34 +54,37 @@
                     <div class='text_left_bkock'>
                         <h2 class='vhod_text'>Регистрация</h2>
                     </div>
-                    <div class='fio'>
-                        <label>ФИО : </label>
+                    <div class='inf'>
+                        <label>Компания : </label>
+                        <input type='text' placeholder="Компания">
+                    </div>
+                    <hr>
+                    <div class='inf'>
+                        <label>Должнсть : </label>
+                        <input type='text' placeholder="Должность">
+                    </div>
+                    <hr>
+                    <div class='inf'>
+                        <label>E-mail : </label>
+                        <input type='text' placeholder="E-mail">
+                    </div>
+                    <hr>
+                    <div class='inf'>
+                        <label>Пароль : </label>
+                        <input type='text' placeholder="Пароль">
+                    </div>
+                    <hr>
+                    <div class='inf'>
+                        <label>Город / Регион : </label>
                         <input type='text' placeholder="ФИО">
                     </div>
                     <hr>
-                    <div class='fio'>
-                        <label>ФИО : </label>
-                        <input type='text' placeholder="ФИО">
+                    <div class='inf'>
+                        <input type='checkbox' name='check'>
+                        <label>Даю согласие на обработку персональных данных</label>
                     </div>
-                    <hr>
-                    <div class='fio'>
-                        <label>ФИО : </label>
-                        <input type='text' placeholder="ФИО">
-                    </div>
-                    <hr>
-                    <div class='fio'>
-                        <label>ФИО : </label>
-                        <input type='text' placeholder="ФИО">
-                    </div>
-                    <hr>
-                    <div class='fio'>
-                        <label>ФИО : </label>
-                        <input type='text' placeholder="ФИО">
-                    </div>
-                    <hr>
-                    <div class='fio'>
-                        <label>ФИО : </label>
-                        <input type='text' placeholder="ФИО">
+                    <div class='inf'>
+                        <input type='submit' value='Зарегистрироваться'>
                     </div>
                 </section>
             </div>
