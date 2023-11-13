@@ -1,0 +1,22 @@
+body {
+    background-color:white;
+    text-align: center;
+}
+
+h1 {
+    color: #6FB98F;
+    margin-top: 161px ;
+}
+
+.avatar {
+    margin-top: 66px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+h2 {
+    margin-top: 12px;
+    color: black;
+}
+
