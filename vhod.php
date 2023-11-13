@@ -48,6 +48,44 @@
 
             </header>
         </div>
+        <main>
+            <div class="container">
+                <section class='left'>
+                    <div class='text_left_bkock'>
+                        <h2 class='vhod_text'>Регистрация</h2>
+                    </div>
+                    <div class='fio'>
+                        <label>ФИО : </label>
+                        <input type='text' placeholder="ФИО">
+                    </div>
+                    <hr>
+                    <div class='fio'>
+                        <label>ФИО : </label>
+                        <input type='text' placeholder="ФИО">
+                    </div>
+                    <hr>
+                    <div class='fio'>
+                        <label>ФИО : </label>
+                        <input type='text' placeholder="ФИО">
+                    </div>
+                    <hr>
+                    <div class='fio'>
+                        <label>ФИО : </label>
+                        <input type='text' placeholder="ФИО">
+                    </div>
+                    <hr>
+                    <div class='fio'>
+                        <label>ФИО : </label>
+                        <input type='text' placeholder="ФИО">
+                    </div>
+                    <hr>
+                    <div class='fio'>
+                        <label>ФИО : </label>
+                        <input type='text' placeholder="ФИО">
+                    </div>
+                </section>
+            </div>
+        </main>
     </div>
 </body>
 </html>
