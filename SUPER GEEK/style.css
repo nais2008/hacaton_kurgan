@@ -46,7 +46,7 @@ header {
 }
 
 .nav a {
-	font-size: 25px; 
+	font-size: 23px; 
 	margin-top: 30px;
 	margin-left: 30px;
 	margin-right: 1190px; 
@@ -184,3 +184,110 @@ h4 {
 	background-color: #2C7873;
 	color: #f7f7f7;
 }
+
+/*Program*/
+
+.prog {
+	margin-top: 95px;
+	padding: 60px 0px;
+	background-color: #6FB98F;
+	color: #021C1E;
+}
+
+.prog h4 {
+	color: #021C1E;
+}
+
+ul {
+	display: flex;
+}
+
+.meet {
+	width: 490px;
+	list-style-image: url(img/meet.svg);
+	margin-right: 90px; 
+	margin-left: 15px;
+}
+
+.task {
+	width: 490px;
+	list-style-image: url(img/task.svg);
+	margin-right: 90px;  
+}
+
+.pres {
+	width: 490px;
+	list-style-image: url(img/pres.svg);
+}
+
+h5 {
+	font-size: 32px;
+	margin: 0px;
+	color: #021C1E;
+	
+}
+
+.prog p{
+	font-size: 23px;
+	width: 430px;
+}
+
+/*Footer*/
+
+footer {
+	background-color: #021C1E;
+	padding-top: 90px;
+	padding-bottom: 110px;  
+	
+}
+
+footer .container {
+	display: flex;
+}
+
+.logo {
+	display: flex; 
+	margin-bottom: 20px;  
+}
+
+footer h4{
+	margin: 0px 15px 0px 20px;
+	color: #f7f7f7;
+}
+
+h6 {
+	font-size: 23px;
+	margin: 20px 0px 0px 0px;
+	height: 25px;
+	color: #6FB98F;
+}
+
+.b {
+	margin-right: 280px;
+}
+
+footer p {
+	font-size: 20px;
+	margin: 0px;
+	padding-top: 10px;
+}
+
+footer h2 {
+	margin: 0px 0px 30px 0px;
+	padding: 15px 0px 0px 0px;
+	color: #f7f7f7;
+}
+
+.contacts {
+	margin-right: 500px;
+}
+
+.soc {
+	display: flex;
+}
+
+.tel {
+	color: #6FB98F;
+	margin-right: 40px;
+}
+
