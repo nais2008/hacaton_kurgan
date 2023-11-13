@@ -148,3 +148,9 @@ a:focus {
 #politics{
     display: inline;
 }
+h2{
+    border-bottom:5px solid #6FB98F;
+    margin-left:50%;    
+    transform: translateX(-50%);    
+    margin-bottom: 10px;
+}

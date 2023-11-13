@@ -18,7 +18,7 @@ if($conn->connect_error){
 if ((isset($_POST['logemail']))&&(isset($_POST['logname']))&&(isset($_POST['logpass']))&&(isset($_POST['input2']))) {
      	$o=0; 
    // текст SQL запроса, который будет передан базе
-      $query = 'SELECT * FROM `user`';
+      $query = 'SELECT * FROM `hel`';
    // выполняем запрос к базе данных
       $result = mysqli_query($conn, $query);
         while($row = $result->fetch_assoc()){
@@ -62,11 +62,11 @@ if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod
 	$a = 0;
 
 	 // текст SQL запроса, который будет передан базе
-      $query = 'SELECT log_in, password FROM `user`';
+      $query = 'SELECT email, password FROM `hel`';
    // выполняем запрос к базе данных
       $result = mysqli_query($conn, $query);
         while($row = $result->fetch_assoc()){
-			if (($row['log_in']==$_POST['logname1']) && ($row['password']==$_POST['logpass1'])){
+			if (($row['email']==$_POST['email1']) && ($row['password']==$_POST['password1'])){
 				$a=1;
 			}
 			
@@ -74,19 +74,18 @@ if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod
 	}	
 	if ($a == 0) {
 			echo '<h2 class="osh">Не правильно введен логин или пароль</h2>';
-	
     }
     else{
 		
 		
-				$log=$_POST['logname1'];
-				$pas=$_POST['logpass1'];
+				$log=$_POST['email1'];
+				$pas=$_POST['password1'];
 				
-				setcookie("logname", $_POST['logname1']);
-				setcookie("logpass", $_POST['logpass1']);
+				setcookie("logname", $_POST['email1']);
+				setcookie("logpass", $_POST['password1']);
 				
 		 $new_url = 'https://localhost/HP/account.php';
-		  header('Location: '.$new_url);
+		 header('Location: '.$new_url);
 			 }
 }
 ?>
@@ -176,7 +175,7 @@ if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod
                         <hr>
                         <div class='inf'>
                             <label>Город / Регион : </label>
-                            <input type='text' placeholder="" name='gor' form='form'>
+                            <input type='text' placeholder="Город / Регион" name='gor' form='form'>
                         </div>
                         <hr>
                         <div class='inf'>
