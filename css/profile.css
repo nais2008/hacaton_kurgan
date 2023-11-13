@@ -7,6 +7,7 @@ body {
 	font-size: 27px;
 	font-weight: 400;
 	color: white; 
+	overflow-x: hidden;
 }
 
 .container {
@@ -25,11 +26,16 @@ header {
 	z-index: 1;
 	width: 100%;
 }
+header svg{
+	margin-left:10px;
+	margin-top:10px;
+}
 
 .nav {
-	display: flex;
-	height: 90px;
-	 
+	width:1400px;
+	margin : 25px 25px 25px 25px;
+    display: flex;
+    justify-content: space-between; 
 }
 
 .nav img {
@@ -52,7 +58,7 @@ button {
 
 h1 {
     font-size: 40px;
-    color: #6FB98F;
+    color: #2C7873;
     margin-top: 65px ;
 }
 
@@ -83,3 +89,81 @@ p {
     color: black;
     display: inline;
  }
+ li, a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+}
+a:focus {
+    color: #2C7873;
+    font-weight: 700;
+    transition: .3s linear;
+}
+
+#menu, .label:before, .label:after {
+    content: " ";
+    position: absolute;
+    transform: translateX(-120%);
+    width: 40px;
+    height: 5px;
+    background-color: #2C7873;
+    border-radius: 2px;
+    transition: .5s ease;
+}
+
+.label {
+    padding: 38px 70px;
+    position: absolute;
+    z-index: 1;
+}
+.label:before { top: 25px;right:155px; }
+.label:after { top: 40px;right:155px;  }
+
+#menu {
+    top: 10px;
+    width: 0px;
+    transition: .2s ease;
+    z-index: 0;
+    left: 1370px;
+}
+#menu li {
+    line-height: 0.5;
+    pointer-events: none;
+    opacity: 0;
+}
+
+#menu-toggle:checked + .label:before {
+    top: 60px;
+    right:155px;
+    transform: rotate(-45deg);
+}
+#menu-toggle:checked + .label:after {
+    top: 60px;
+    right:155px;
+    transform: rotate(45deg);
+}
+#menu-toggle:checked + .label + #menu {
+    top: 44px;
+    right:500px;
+    width: 200px;
+    height: 100px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    transition: .3s ease .2s;
+    z-index: 1;
+}
+#menu-toggle:checked + .label + #menu li {
+    pointer-events: all;
+    font: 16pt 'Roboto', sans-serif;
+    line-height: 2.3;
+    opacity: 1;
+    z-index: 2;
+    transition: .2s ease .3s;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    display: none;
+}
+main{
+	margin-top:-8rem;
+}
