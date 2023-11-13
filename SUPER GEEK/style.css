@@ -76,8 +76,13 @@ h1 {
 }
 
 h2 {
-	font-size: 32px; 
+	font-size: 28px; 
 	color: #6FB98F; 
-	margin: 0px;
-	padding-top: 77px;
+	margin: 0px 0px 0px 15px;
+	padding-top: 82px;
+}
+
+.text p {
+	width: 620px; 
+	
 }
