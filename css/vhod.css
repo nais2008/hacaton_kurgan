@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding: 0;
+    font-family:'Roboto', sans-serif;
 }
 
 header{
@@ -84,7 +85,7 @@ a:focus {
 #menu, .label:before, .label:after {
     content: " ";
     position: absolute;
-    left: -10rem;
+    transform: translateX(-120%);
     width: 40px;
     height: 5px;
     background-color: #D3FFDD;
@@ -143,4 +144,7 @@ a:focus {
 
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
     display: none;
+}
+#politics{
+    display: inline;
 }

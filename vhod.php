@@ -8,6 +8,10 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="css/vhod.css">
+
+    <!-- favicon -->
+
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
 </head>
 <body>
     <div class='wraper'>
@@ -55,32 +59,32 @@
                         </div>
                         <div class='inf'>
                             <label>ФИО : </label>
-                            <input type='text' placeholder="ФИО">
+                            <input type='text' placeholder="ФИО" name='fio'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Компания : </label>
-                            <input type='text' placeholder="Компания">
+                            <input type='text' placeholder="Компания" name='kompany'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Должнсть : </label>
-                            <input type='text' placeholder="Должность">
+                            <input type='text' placeholder="Должность" name='dolgnost'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>E-mail : </label>
-                            <input type='text' placeholder="E-mail">
+                            <input type='text' placeholder="E-mail" name='email'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Пароль : </label>
-                            <input type='text' placeholder="Пароль">
+                            <input type='text' placeholder="Пароль" name='password'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Город / Регион : </label>
-                            <input type='text' placeholder="">
+                            <input type='text' placeholder="" name='gor'>
                         </div>
                         <hr>
                         <div class='inf'>
