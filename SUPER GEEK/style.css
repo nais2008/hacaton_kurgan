@@ -27,7 +27,7 @@ a {
 /*Header*/
 
 header {
-	background-color: rgba(111, 185, 143, 0.5);
+	background: linear-gradient(180deg, rgba(111, 185, 143, 0.50) 0%, rgba(44, 120, 115, 0.50) 100%);
 	z-index: 1;
 	position: absolute;
 	width: 100%;
@@ -290,4 +290,3 @@ footer h2 {
 	color: #6FB98F;
 	margin-right: 40px;
 }
-
