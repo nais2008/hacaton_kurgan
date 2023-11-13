@@ -22,7 +22,6 @@ a {
 /*Header*/
 
 header {
-	background: linear-gradient(180deg, rgba(111, 185, 143, 0.50) 0%, rgba(44, 120, 115, 0.50) 100%);
 	z-index: 1;
 	width: 100%;
 }

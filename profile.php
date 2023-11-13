@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPER GEET</title>
+
+    <!-- CSS -->
+
     <link rel="stylesheet" href="css/profile.css">
+
+    <!-- favicon -->
+
     <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
 </head>
 <body>
@@ -12,7 +18,6 @@
         <div class="container">
             <div class="nav">
                 <img src="assets/img/logo.svg" alt="logo">
-                <a href="#">Личный кабинет</a>
                 <button>
                     <img src="assets/img/gamb.svg" alt="gamborger">
                 </button>
