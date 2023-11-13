@@ -26,6 +26,5 @@ header{
     width: 360px;
 }
 .conteiner{
-    margin-left:150px;
-    margin-right:150px;
+    display: flex;
 }
