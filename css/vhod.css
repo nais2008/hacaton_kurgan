@@ -98,11 +98,11 @@ a:focus {
     position: absolute;
     z-index: 1;
 }
-.label:before { top: 50px;left:1345px }
-.label:after { top: 65px;left:1345px  }
+.label:before { top: 16px;left:1345px }
+.label:after { top: 31px;left:1345px  }
 
 #menu {
-    top: 44px;
+    top: 10px;
     width: 0px;
     transition: .2s ease;
     z-index: 0;

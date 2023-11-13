@@ -15,14 +15,14 @@ if($conn->connect_error){
    // выводим полученные данные
       
       
-if ((isset($_POST['logemail']))&&(isset($_POST['logname']))&&(isset($_POST['logpass']))&&(isset($_POST['input2']))) {
+if ((isset($_POST['fio']))&&(isset($_POST['kompany']))&&(isset($_POST['dolgnost']))&&(isset($_POST['email']))&&(isset($_POST['password']))&&(isset($_POST['gor']))&&(isset($_POST['submit']))) {
      	$o=0; 
    // текст SQL запроса, который будет передан базе
       $query = 'SELECT * FROM `hel`';
    // выполняем запрос к базе данных
       $result = mysqli_query($conn, $query);
         while($row = $result->fetch_assoc()){
-			if (($row['log_in'] == $_POST['logname']) || ($row['email'] == $_POST['logemail'])){
+			if ($row['email'] == $_POST['logemail']){
 			$o=1;
 			}
 
@@ -31,17 +31,21 @@ if ((isset($_POST['logemail']))&&(isset($_POST['logname']))&&(isset($_POST['logp
 			echo '<h2 class="osh">Такой аккаунт уже существует</h2>';
 		}
 		else{
-				//~ $query = 'SELECT log_in, password FROM `user`';
-				//~ // выполняем запрос к базе данных
-				//~ $result = mysqli_query($conn, $query);
-				$log=$_POST['logname'];
-				$pas=$_POST['logpass'];
-				$email=$_POST['logemail'];
-				setcookie("logname", $_POST['logname']);
-				setcookie("logpass", $_POST['logpass']);
-				setcookie("logemail", $_POST['logemail']);
+				$fio = $_POST['fio'];
+				$k = $_POST['kompany'];
+				$d = $_POST['dolgnost'];
+				$email = $_POST['email'];
+                $pas = $_POST['password'];
+                $gor = $_POST['gor'];
+
+                setcookie('fio', $_POST['fio']);
+                setcookie('kompany', $_POST['kompany']);
+                setcookie('dolgnost', $_POST['dolgnost']);
+                setcookie('email', $_POST['email']);
+                setcookie('password', $_POST['password']);
+                setcookie('sity', $_POST['gor']);
 				
-				$p = "INSERT INTO `user`(`id`, `log_in`, `password`, `FIO`, `date`, `email`,`nickname_pet`, `vid_pet`) VALUES ('','$log','$pas','','','$email','', '')";
+				$p = "INSERT INTO `hel`(`id`, `fio`, `dolgnost`, `email`, `password`,`kompany`, `sity`) VALUES ('','$fio','$d','$email','$pas','$k','$gor')";
 				//~ $result = mysqli_query($conn, $p);
 				if(mysqli_query($conn, $p)){
 					echo "Данные успешно добавлены";
@@ -50,7 +54,7 @@ if ((isset($_POST['logemail']))&&(isset($_POST['logname']))&&(isset($_POST['logp
 				}
 				
 				
-				$new_url = 'https://localhost/HP/account.php';
+				$new_url = 'https://localhost/hacaton_kurgan/profile.php';
 				header('Location: '.$new_url);
 				}
 		
@@ -84,7 +88,7 @@ if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod
 				setcookie("logname", $_POST['email1']);
 				setcookie("logpass", $_POST['password1']);
 				
-		 $new_url = 'https://localhost/HP/account.php';
+		 $new_url = 'https://localhost/hacaton_kurgan/profile.php';
 		 header('Location: '.$new_url);
 			 }
 }
@@ -211,7 +215,7 @@ if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod
         </main>
     </div>
 
-    <form action="nn.php" method="post" id="form"></form>
+    <form action="vhod.php" method="post" id="form"></form>
     <script>
 
     </script>
