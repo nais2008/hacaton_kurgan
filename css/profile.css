@@ -1,16 +1,64 @@
 body {
+    margin: 0px;
+	padding: 0px;
     background-color:white;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+	font-size: 27px;
+	font-weight: 400;
+	color: white; 
+}
+
+.container {
+	margin: 0px auto;
+	width: 1570px; 
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*Header*/
+
+header {
+	background: linear-gradient(180deg, rgba(111, 185, 143, 0.50) 0%, rgba(44, 120, 115, 0.50) 100%);
+	z-index: 1;
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	height: 90px;
+	 
+}
+
+.nav img {
+	height: 57px;
+	width: 57px;
+	margin-top: 15px;
+}
+
+.nav a {
+	font-size: 25px; 
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 1190px; 
+}
+
+button {
+	background: none;
+	border: none; 
 }
 
 h1 {
     font-size: 40px;
     color: #6FB98F;
-    margin-top: 161px ;
+    margin-top: 65px ;
 }
 
 .avatar {
-    margin-top: 66px;
+    margin-top: 50px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
