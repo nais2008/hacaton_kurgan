@@ -58,7 +58,7 @@ if ((isset($_POST['logemail']))&&(isset($_POST['logname']))&&(isset($_POST['logp
 	
 			
     
-if ((isset($_POST['logname1']))&&(isset($_POST['logpass1']))&&(isset($_POST['input1']))){
+if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod']))){
 	$a = 0;
 
 	 // текст SQL запроса, который будет передан базе
@@ -151,32 +151,32 @@ if ((isset($_POST['logname1']))&&(isset($_POST['logpass1']))&&(isset($_POST['inp
                         </div>
                         <div class='inf'>
                             <label>ФИО : </label>
-                            <input type='text' placeholder="ФИО" name='fio'>
+                            <input type='text' placeholder="ФИО" name='fio' form='form'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Компания : </label>
-                            <input type='text' placeholder="Компания" name='kompany'>
+                            <input type='text' placeholder="Компания" name='kompany' form='form'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Должнсть : </label>
-                            <input type='text' placeholder="Должность" name='dolgnost'>
+                            <input type='text' placeholder="Должность" name='dolgnost' form='form'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>E-mail : </label>
-                            <input type='text' placeholder="E-mail" name='email'>
+                            <input type='text' placeholder="E-mail" name='email' form='form'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Пароль : </label>
-                            <input type='text' placeholder="Пароль" name='password'>
+                            <input type='text' placeholder="Пароль" name='password' form='form'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Город / Регион : </label>
-                            <input type='text' placeholder="" name='gor'>
+                            <input type='text' placeholder="" name='gor' form='form'>
                         </div>
                         <hr>
                         <div class='inf'>
@@ -184,7 +184,7 @@ if ((isset($_POST['logname1']))&&(isset($_POST['logpass1']))&&(isset($_POST['inp
                             <label>Даю согласие на обработку персональных данных</label>
                         </div>
                         <div class='inf'>
-                            <input type='submit' value='Зарегистрироваться' id='submit' class='input' name='submit'>
+                            <input type='submit' value='Зарегистрироваться' id='submit' class='input' name='submit' form='form'>
                         </div>
                     </div>
                 </section>
@@ -195,22 +195,24 @@ if ((isset($_POST['logname1']))&&(isset($_POST['logpass1']))&&(isset($_POST['inp
                         </div>
                         <div class='inf'>
                             <label>E-mail : </label>
-                            <input type='text' placeholder="E-mail" name='email1'>
+                            <input type='text' placeholder="E-mail" name='email1' form='form'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Пароль : </label>
-                            <input type='text' placeholder="Пароль" name='password1'>
+                            <input type='text' placeholder="Пароль" name='password1' form='form'>
                         </div>
                         <hr>
                         <div class='inf'>
-                            <input type='submit' value='Вход' class='input' name='vhod'>
+                            <input type='submit' value='Вход' class='input' name='vhod' form='form'>
                         </div>
                     </div>
                 </section>
             </div>
         </main>
     </div>
+
+    <form action="nn.php" method="post" id="form"></form>
     <script>
 
     </script>
