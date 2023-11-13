@@ -1,3 +1,21 @@
+<?php 
+
+session_start();
+$conn = mysqli_connect("localhost", "root", "", "hk");
+if($conn->connect_error){
+    die("Ошибка: " . $conn->connect_error);
+}
+//~ echo "Подключение успешно установлено";
+
+ // текст SQL запроса, который будет передан базе
+      $query = 'SELECT * FROM `hel`';      
+
+
+   // выполняем запрос к базе данных
+      $result = mysqli_query($conn, $query, );      
+		$row = $result->fetch_assoc();
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,23 +74,30 @@
     <main>
         <h1>Личный кабинет</h1>
         <img src="assets/img/bg.jpg" alt="" class="avatar" width="309" height="309">
-        <h2>ФИО</h2>
-        <p >
-            <p class="data"> Компания: </p>
-            <p class="data1"> Компания </p>
-        </p>
-        <p>
-            <p class="data"> Должность: </p>
-            <p class="data1"> Должность </p>
-        </p>
-        <p>
-            <p class="data"> E-mail: </p>
-            <p class="data1"> E-mail </p>
-        </p>
-        <p>
-            <p class="data"> Регион: </p>
-            <p class="data1"> Регион </p>
-        </p>
+        <h2><?=$row['fio']?></h2>
+        <?php
+            $coc=$_COOKIE['email'];
+			$query = "SELECT * FROM `hel` WHERE `email`='$coc'";      
+			$result = mysqli_query($conn, $query);   
+			$row = $result->fetch_assoc();
+            // echo '<p><p>Компания : </p><p>', $row, '</p></p>';
+		?>			
+            <p>
+                <p class='data'>Компания : </p>
+                <p class='data1'><?=$row['kompany']?></p>
+            </p>	
+            <p>
+                <p class='data'>Должность : </p>
+                <p class='data1'><?=$row['dolgnost']?></p>
+            </p>	
+            <p>
+                <p class='data'>E-mail : </p>
+                <p class='data1'><?=$row['email']?></p>
+            </p>	
+            <p>
+                <p class='data'>Город / регион : </p>
+                <p class='data1'><?=$row['sity']?></p>
+            </p>	
     </main>
 
     

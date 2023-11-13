@@ -85,8 +85,8 @@ if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod
 				$log=$_POST['email1'];
 				$pas=$_POST['password1'];
 				
-				setcookie("logname", $_POST['email1']);
-				setcookie("logpass", $_POST['password1']);
+				setcookie("email", $_POST['email1']);
+				setcookie("password", $_POST['password1']);
 				
 		 $new_url = 'https://localhost/hacaton_kurgan/profile.php';
 		 header('Location: '.$new_url);
