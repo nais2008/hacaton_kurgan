@@ -1,13 +1,13 @@
 <?php 
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "hp");
+$conn = mysqli_connect("localhost", "root", "", "hk");
 if($conn->connect_error){
     die("Ошибка: " . $conn->connect_error);
 }
 //~ echo "Подключение успешно установлено";
 
  // текст SQL запроса, который будет передан базе
-      $query = 'SELECT * FROM `shop`';
+      $query = 'SELECT * FROM `hel`';
 
    // выполняем запрос к базе данных
       $result = mysqli_query($conn, $query);
@@ -195,16 +195,16 @@ if ((isset($_POST['logname1']))&&(isset($_POST['logpass1']))&&(isset($_POST['inp
                         </div>
                         <div class='inf'>
                             <label>E-mail : </label>
-                            <input type='text' placeholder="E-mail">
+                            <input type='text' placeholder="E-mail" name='email1'>
                         </div>
                         <hr>
                         <div class='inf'>
                             <label>Пароль : </label>
-                            <input type='text' placeholder="Пароль">
+                            <input type='text' placeholder="Пароль" name='password1'>
                         </div>
                         <hr>
                         <div class='inf'>
-                            <input type='submit' value='Вход' class='input'>
+                            <input type='submit' value='Вход' class='input' name='vhod'>
                         </div>
                     </div>
                 </section>
