@@ -14,7 +14,7 @@
 
 				<div class="nav">
 					<img src="img/logo.svg" alt="logo">
-					<a href="#">Личный кабинет</a>
+					<a href="profile.php">Личный кабинет</a>
 					<button>
 					<input type="checkbox" id="menu-toggle" >
                     <label for="menu-toggle" class='label'></label>
@@ -118,11 +118,11 @@
 	<footer>
 		<div class="container">
 			<div class="b">
-				<div class="logo">
+				<a href="index.php"class="logo">
 					<img src="img/logo.svg" alt="">
 					<h4>SUPER GEEK</h4>
 					<h6>IT-FORUM</h6> 
-				</div>
+				</a>
 
 				<p>@2022 All Rights Reserved</p>
 				<p>Все права защищены</p>
