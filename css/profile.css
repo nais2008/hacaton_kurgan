@@ -117,7 +117,7 @@ a:focus {
     position: absolute;
     z-index: 1;
 }
-.label:before { top: 25px;right:155px; }
+.label:before { top: 25px; right: 1005px;}
 .label:after { top: 40px;right:155px;  }
 
 #menu {
