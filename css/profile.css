@@ -49,8 +49,8 @@ a:focus {
     position: absolute;
     z-index: 1;
 }
-.label:before { top: 50px;left:1345px }
-.label:after { top: 65px;left:1345px  }
+.label:before { top: 50px;right:155px; }
+.label:after { top: 65px; right:155px;}
 
 #menu {
     top: 44px;
@@ -67,12 +67,12 @@ a:focus {
 
 #menu-toggle:checked + .label:before {
     top: 60px;
-    left: 1320px;
+    right:155px;
     transform: rotate(-45deg);
 }
 #menu-toggle:checked + .label:after {
     top: 60px;
-    left: 1320px;
+    right:155px;
     transform: rotate(45deg);
 }
 #menu-toggle:checked + .label + #menu {
