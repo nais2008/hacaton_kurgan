@@ -21,7 +21,7 @@
 						<label for="menu-toggle" class='label'></label>
 						<ul id="menu">
 						<li><a href="index.php" style='position:relative;right:21rem;top:-4rem;'><p>Главная страница</p></a></li>
-                        <li><a href="index.php" style='color: rgb(0, 57, 0);position:absolute;top:2rem;left:16rem;'>Чат</a></li>
+                        <!-- <li><a href="index.php" style='color: rgb(0, 57, 0);position:absolute;top:2rem;left:16rem;'>Чат</a></li> -->
                         <li><a href="vhod.php" style='color: rgb(0, 57, 0);position:absolute;top:4rem;left:12rem;white-space: normal;'><p>Вход Регистрация</p></a></li>
 						</ul> 
 					</button>

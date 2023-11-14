@@ -141,7 +141,7 @@ if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod
     <label for="menu-toggle" class='label'></label>
     <ul id="menu">
         <li><a href="index.php">Главная страница</a></li>
-        <li><a href="#">Чат</a></li>
+        <!-- <li><a href="index.php">Чат</a></li> -->
     </ul>
 
 

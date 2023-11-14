@@ -64,7 +64,7 @@ if($conn->connect_error){
                     <label for="menu-toggle" class='label'></label>
                     <ul id="menu">
                         <li><a href="index.php" style='position:relative;top:-1rem;left:-5px;'><p>Главная страница</p></a></li>
-                        <li><a href="index.php" style="position:relative;top:-4rem;left:8rem">Чат</a></li>
+                        <!-- <li><a href="index.php" style="position:relative;top:-4rem;left:8rem">Чат</a></li> -->
                     </ul> 
                 </div>
             </div>
