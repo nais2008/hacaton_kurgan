@@ -117,15 +117,15 @@ a:focus {
     position: absolute;
     z-index: 1;
 }
-.label:before { top: 25px; right: 1005px;}
+.label:before { top: 25px;right:155px; }
 .label:after { top: 40px;right:155px;  }
 
 #menu {
-    top: 10px;
+    top: 8px;
     width: 0px;
     transition: .2s ease;
     z-index: 0;
-    left: 1370px;
+    right:305px;
 }
 #menu li {
     line-height: 0.5;
@@ -145,9 +145,9 @@ a:focus {
 }
 #menu-toggle:checked + .label + #menu {
     top: 44px;
-    right:500px;
-    width: 200px;
-    height: 100px;
+    right:25px;
+    width: 400px;
+    height: 200px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     transition: .3s ease .2s;
     z-index: 1;

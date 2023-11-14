@@ -14,12 +14,12 @@
 
 				<div class="nav">
 					<img src="img/logo.svg" alt="logo">
-					<a href="#">Личный кабинет</a>
+					<a href="#">Главная</a>
 					<button>
 					<input type="checkbox" id="menu-toggle" >
                     <label for="menu-toggle" class='label'></label>
                     <ul id="menu">
-                        <li><a href="index.php">Главная страница</a></li>
+                        <li><a href="index.php" >Главная страница</a></li>
                         <li><a href="#">Чат</a></li>
                     </ul> 
 					</button>
