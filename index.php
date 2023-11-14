@@ -135,7 +135,7 @@
 				<p>г. Курган</p>
 				<div class="soc">
 					<p class="tel">+7 (919) 593-64-32 </p>
-					<a href="#"><img src="img/vk.svg" alt="vk"></a>
+					<a href="https://vk.com/mama_kupi_snikers"><img src="img/vk.svg" alt="vk"></a>
 				</div>
 			</div>
 
