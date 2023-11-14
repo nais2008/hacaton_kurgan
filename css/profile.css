@@ -201,11 +201,12 @@ a:focus {
 .label:after { top: 40px;right:155px;  }
 
 #menu {
-    top: 8px;
+    position: relative;
+    top: -18px;
     width: 0px;
     transition: .2s ease;
     z-index: 0;
-    right:305px;
+    left: -35px;
 }
 #menu li {
     line-height: 0.5;
@@ -225,7 +226,7 @@ a:focus {
 }
 #menu-toggle:checked + .label + #menu {
     top: 44px;
-    right:25px;
+    right:-200  px;
     width: 400px;
     height: 200px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);

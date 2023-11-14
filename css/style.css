@@ -337,7 +337,7 @@ a:focus {
     width: 0px;
     transition: .2s ease;
     z-index: 0;
-    right:155px;
+    right:185px;
 }
 #menu li {
     line-height: 0.5;

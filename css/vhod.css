@@ -24,6 +24,9 @@ header{
     border-radius: 3px;
     border-color: #2C7873;
     color:#000;
+    height:30px;
+    padding-left:10px ;
+    font-size: 16px;
 }
 .left hr{
     height:2px;
@@ -59,6 +62,9 @@ header{
     border-radius: 3px;
     border-color: #2C7873;
     color:#000;
+    height:30px;
+    padding-left:10px ;
+    font-size: 16px;
 }
 .right hr{
     height:2px;
