@@ -191,7 +191,6 @@ h4 {
 	margin-top: 95px;
 	padding: 60px 0px;
 	background-color: #6FB98F;
-	color: #021C1E;
 }
 
 .prog h4 {
@@ -230,6 +229,7 @@ h5 {
 .prog p{
 	font-size: 23px;
 	width: 430px;
+	color: #021C1E;
 }
 
 /*Footer*/
