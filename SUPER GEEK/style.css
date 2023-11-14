@@ -204,20 +204,20 @@ ul {
 
 .meet {
 	width: 490px;
-	list-style-image: url(img/meet.svg);
+	list-style-image: url(../assets/img/meet.svg);
 	margin-right: 90px; 
 	margin-left: 15px;
 }
 
 .task {
 	width: 490px;
-	list-style-image: url(img/task.svg);
+	list-style-image: url(../assets/img/task.svg);
 	margin-right: 90px;  
 }
 
 .pres {
 	width: 490px;
-	list-style-image: url(img/pres.svg);
+	list-style-image: url(../assets/img/pres.svg);
 }
 
 h5 {
