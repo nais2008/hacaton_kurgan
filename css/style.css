@@ -194,7 +194,7 @@ h4 {
 }
 
 .prog h4 {
-	color: #021C1E;
+	color: #021C1E; 
 }
 
 ul {
@@ -223,13 +223,14 @@ h5 {
 	font-size: 32px;
 	margin: 0px;
 	color: #021C1E;
-	
+	padding-left: 15px;
 }
 
 .prog p{
 	font-size: 23px;
 	width: 430px;
 	color: #021C1E;
+	text-indent: 0; 
 }
 
 /*Footer*/
