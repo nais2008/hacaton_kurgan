@@ -22,7 +22,7 @@ if ((isset($_POST['fio']))&&(isset($_POST['kompany']))&&(isset($_POST['dolgnost'
    // выполняем запрос к базе данных
       $result = mysqli_query($conn, $query);
         while($row = $result->fetch_assoc()){
-			if ($row['email'] == $_POST['logemail']){
+			if ($row['email'] == $_POST['email']){
 			$o=1;
 			}
 

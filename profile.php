@@ -63,8 +63,8 @@ if($conn->connect_error){
                    <input type="checkbox" id="menu-toggle" >
                     <label for="menu-toggle" class='label'></label>
                     <ul id="menu">
-                        <li><a href="index.php">Главная страница</a></li>
-                        <li><a href="#">Чат</a></li>
+                        <li><a href="index.php" style='position:relative;top:-1rem;left:-5px;'><p>Главная страница</p></a></li>
+                        <li><a href="index.php" style="position:relative;top:-4rem;left:8rem">Чат</a></li>
                     </ul> 
                 </div>
             </div>
@@ -74,14 +74,14 @@ if($conn->connect_error){
     <main>
         <h1>Личный кабинет</h1>
         <img src="assets/img/bg.jpg" alt="" class="avatar" width="309" height="309">
-        <h2><?=$row['fio']?></h2>
         <?php
             $coc=$_COOKIE['email'];
 			$query = "SELECT * FROM `hel` WHERE `email`='$coc'";      
 			$result = mysqli_query($conn, $query);   
 			$row = $result->fetch_assoc();
             // echo '<p><p>Компания : </p><p>', $row, '</p></p>';
-		?>			
+		?>		
+        <h2><?=$row['fio']?></h2>	
             <p>
                 <p class='data'>Компания : </p>
                 <p class='data1'><?=$row['kompany']?></p>
