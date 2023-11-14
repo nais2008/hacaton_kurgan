@@ -172,7 +172,7 @@ if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod
                         <hr>
                         <div class='inf'>
                             <label>E-mail : </label>
-                            <input type='text' placeholder="E-mail" name='email' form='form' class='hg'>
+                            <input type='email' placeholder="E-mail" name='email' form='form' class='hg'>
                         </div>
                         <hr>
                         <div class='inf'>
@@ -201,7 +201,7 @@ if ((isset($_POST['email1']))&&(isset($_POST['password1']))&&(isset($_POST['vhod
                         </div>
                         <div class='inf'>
                             <label>E-mail : </label>
-                            <input type='text' placeholder="E-mail" name='email1' form='form' class='hg'>
+                            <input type='email' placeholder="E-mail" name='email1' form='form' class='hg'>
                         </div>
                         <hr>
                         <div class='inf'>
