@@ -14,18 +14,15 @@
 
 				<div class="nav">
 					<img src="img/logo.svg" alt="logo">
-<<<<<<< HEAD
 					<a href="#">Главная</a>
-=======
-					<a href="profile.php">Личный кабинет</a>
->>>>>>> 1011f9b40c9e017ba0673bf9b378e68a06a3505a
-					<button>
-					<input type="checkbox" id="menu-toggle" >
-                    <label for="menu-toggle" class='label'></label>
-                    <ul id="menu">
-                        <li><a href="index.php" >Главная страница</a></li>
-                        <li><a href="#">Чат</a></li>
-                    </ul> 
+					<!-- <a href="profile.php">Личный кабинет</a> -->
+						<button>
+						<input type="checkbox" id="menu-toggle" >
+						<label for="menu-toggle" class='label'></label>
+						<ul id="menu">
+						<li><a href="index.php" style='position:relative;right:21rem;top:-4rem;'><p>Главная страница</p></a></li>
+                        <li><a href="index.php">Чат</a></li>
+						</ul> 
 					</button>
 				</div>
 
